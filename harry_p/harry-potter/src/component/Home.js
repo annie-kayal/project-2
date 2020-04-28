@@ -32,11 +32,6 @@ class Home extends React.Component {
       })
   }
 
-  HandleRoute() {
-    if (this.state.data === 'Ravenclaw') {
-      <Link to='/houses/'/>
-    }
-  }
 
 
 
