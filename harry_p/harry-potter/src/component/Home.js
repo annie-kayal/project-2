@@ -4,8 +4,6 @@ import axios from 'axios'
 import Spinner from '../assets/Spinner'
 import { Link } from 'react-router-dom'
 
-import HogwartsLogo from '../assets/HogwartsLogo.png'
-import sortingHat from '../assets/sortingHat.png'
 
 
 
@@ -48,14 +46,14 @@ class Home extends React.Component {
 
     else return <div className="title-container">
       <div>
-        <img src={HogwartsLogo}/>
+        <img src='https://i.imgur.com/9H1zWqQ.png'/>
         <h2>
           Click the Sorting Hat to find a home</h2>
       </div>
       <div className="sortingHat"
         onClick={() => this.PickHouse()}
       >
-        <img src={sortingHat}/>
+        <img src='https://i.imgur.com/p88EZCr.png'/>
       </div>
       <div>
         <input
