@@ -6,7 +6,7 @@
 
 This was the second project I took on during the Software Engineering Immersive course at General Assembly. The project was a mini hackathon, whereby I was tasked to consume a **public API** and create a **React multi-page front-end**. This was to completed in **48 hours** and implemented **pair programming**. 
 
-Myself and my partner discussed a number of API’s we could choose from for our project, however after discovering the Harry Potter API we were ready to go. Our end project took the form of a Harry Potter inspired encyclopedia. Visitors of the page can do the following: 
+My partner and I discussed a number of API’s we could choose from for our project; however after discovering the Harry Potter API we were ready to go. Our end project took the form of a Harry Potter inspired encyclopedia. Visitors of the page can do the following: 
 
 - Be sorted into a Hogwarts house 
 
@@ -57,17 +57,17 @@ Dive into the magical land [here!](https://annie-kayal.github.io/project-2/)
 <img src='https://i.imgur.com/gbZ2fdy.png' height='500'>
 </div>
 
-- After having completed our layout, we could decifier how many components our webpage would have and the routes associated with them: 
+- After having completed our layout, we could decipher how many components our webpage would have and the routes associated with them: 
 
     - A Homepage with the route of `/`
 
     - An overview of the  Hogwarts houses at `/houses`
 
-    - Individual Hogwarts house pages, which would be found by their individual ids `/houses/:id`
+    - Individual Hogwarts house pages, which would be found by their individual IDs `/houses/:id`
 
     - A list of all the characters in the franchise at `/characters`
 
-    - Character detail pages which would also use their unique ids at `/characters/:id`
+    - Character detail pages which would also use their unique IDs at `/characters/:id`
 
     - Full list of spells at `/spells`
 
@@ -119,7 +119,7 @@ Dive into the magical land [here!](https://annie-kayal.github.io/project-2/)
 
 #### Houses
 
-- The `/houses` endpoint in our web page lists the Hogwarts houses which prompts a GET request as the page loads. The response from the API provides large detailed information, which is used in another component . For this endpoint, we quickly noticed the response was an array and chose to store this into a piece of state. 
+- The `/houses` endpoint in our web page lists the Hogwarts houses which prompts a GET request as the page loads. The response from the API provides large detailed information, which is used in another component. For this endpoint, we quickly noticed the response was an array and chose to store this into a piece of state. 
 
 - We were then able to access the information by using the `map` method on `this.state.data`. We were able to iterate through every array stored into state and display the House name and the values. 
 
@@ -189,9 +189,9 @@ Dive into the magical land [here!](https://annie-kayal.github.io/project-2/)
 
 - The characters also used a similiar approach as seen on the houses. We used props to access the id and used this is in our request. 
 
-- One differing factor was displaying if characters were either part of Dumbledore's Army, the Ministry of Magic, a Death Eater or part of The order. The API response would either provide a boolean on every one of these fields.
+- One differing factor was displaying if characters were either part of Dumbledore's Army, the Ministry of Magic, a Death Eater or part of The Order. The API response would either provide a boolean on every one of these fields.
 
-- To display these, we used turney operators on each of the characters and if the boolean was true to display and if not, to display nothing: 
+- To display these, we used turnary operators on each of the characters and if the boolean was true to display and if not, to display nothing: 
 
 ```js
 
@@ -220,9 +220,9 @@ Dive into the magical land [here!](https://annie-kayal.github.io/project-2/)
 
 - Implement images. 
 
-- Adding in another interactive element where users can pick a spell and 'battle` with Voldermort. 
+- Adding in another interactive element where users can pick a spell and 'battle' with Voldermort. 
 
-- There is a problem with GitHub pages where React Router doesn't work. While you can access all the pages through the homepage, typing in an absoulute path will not load the page. 
+- There is a problem with GitHub pages where React Router doesn't work. While you can access all the pages through the homepage, typing in an absolute path will not load the page. 
 
 
 ## Lessons Learnt
